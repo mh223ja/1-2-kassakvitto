@@ -1,0 +1,2 @@
+c:\Projects\MyValuableCalculator\MyValuableCalculator\obj\Debug\MyValuableCalculator.Resources.resources
+c:\Projects\MyValuableCalculator\MyValuableCalculator\obj\Debug\MyValuableCalculator.vbproj.GenerateResource.Cache

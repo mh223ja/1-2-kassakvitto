@@ -1,0 +1,6 @@
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\bin\TryCalculatorAgain.dll.config
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\bin\TryCalculatorAgain.dll
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\bin\TryCalculatorAgain.pdb
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\bin\AspNet.ScriptManager.jQuery.dll
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\obj\Debug\TryCalculatorAgain.dll
+c:\Projects\TryCalculatorAgain\TryCalculatorAgain\obj\Debug\TryCalculatorAgain.pdb
