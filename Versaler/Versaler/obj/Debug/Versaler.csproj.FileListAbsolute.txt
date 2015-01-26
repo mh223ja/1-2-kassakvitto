@@ -1,0 +1,6 @@
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\obj\Debug\Versaler.csprojResolveAssemblyReference.cache
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\bin\Versaler.dll.config
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\bin\Versaler.dll
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\bin\Versaler.pdb
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\obj\Debug\Versaler.dll
+C:\Users\Morgan\Desktop\Projects\Versaler\Versaler\obj\Debug\Versaler.pdb

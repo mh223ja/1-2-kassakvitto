@@ -13,5 +13,27 @@ namespace Versaler
         {
 
         }
+
+        protected void Calculate_Click(object sender, EventArgs e)
+        {
+
+            TextArea.Enabled = false; //turns area grey and cannot input more
+            Calculate.Visible = false; //reveals second button
+            Reset.Visible = true;
+
+            string textInput = TextArea.Text;
+
+            int number = CapitalCounter.CountCapitals(textInput);
+
+            CapitalNumber.Text = "Your text contains " + number + " capital letters";
+        }
+
+        protected void Calculate_Reset(object sender, EventArgs e)
+        {
+            TextArea.Enabled = true;
+            Calculate.Visible = true;
+            TextArea.Text = "";
+            CapitalNumber.Text = "";
+        }
     }
 }
