@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Myreceipt.Default" viewStateMode ="disabled"%>
 
-<!DOCTYPE html>0
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head runat="server"> 
     <title></title>
     <link href="Css.css" rel="stylesheet" />
 </head>
@@ -14,12 +14,13 @@
         <h2>Calculate your savings!</h2>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         <asp:TextBox ID="Input" runat="server" TextMode="SingleLine"></asp:TextBox>
-         <asp:Label ID="Label3" runat="server" Text="Kr"></asp:Label>
+         <asp:Label ID="Label3" runat="server" Text="Dollars"></asp:Label>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="You must enter a number!" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="You need to enter a whole number" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" Operator="DataTypeCheck" Type="Double"></asp:CompareValidator>
-      
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="You need to enter a whole number" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" Type="Double" Operator="DataTypeCheck"></asp:CompareValidator>
+        <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="The amount must be greater than zero" ControlToValidate="Input" Display ="Dynamic" MinimumValue ="1" MaximumValue ="99999999999999999999999999999999999999"
+            Type ="Double" Font-Bold="True" Font-Size="18"></asp:RangeValidator>
         <asp:Button ID="Calculate" runat="server" Text="Rebate" OnClick="Calculate_Click" />
-     
+        <asp:Button ID="Reset" runat="server" Text="Reset" Visible ="false" OnClick="Reset_Click" />
     </div>
         <asp:Panel ID="ReceiptPanel" runat="server" HorizontalAlign="Center" Visible ="false">
             <h1> Receipt</h1>
@@ -35,6 +36,7 @@
                 
                 Total:<asp:Label ID="Total" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                     </p>
+                <p>-----------------</p>
 
             </div>
 
