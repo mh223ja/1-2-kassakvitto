@@ -9,29 +9,38 @@ namespace Myreceipt
     {
         double _subTotal;
 
-        public double DiscountRate {get; set;}
-
-        public double MoneyOff {get; set;}
-
-        public double Subtotal {
-            get {
+        public double Subtotal{
+           
+        
+            get
+            {
                 return _subTotal;
-                }
+            }
 
-            set {
-                if (value <= 0){
-                    throw new ArgumentOutOfRangeException("Error! You must enter a number greter than 0");
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Error! You must enter a number greater than 0");
                 }
                 _subTotal = value;
             }
         }
 
-        public double Total {get; set;}
+        public static double DiscountRate { get; set; }
+
+        public double MoneyOff {get; set;}
+
+       
+        
+
+        public double Total {get;  set;}
 
         public receipt(double subtotal)
         {
             
             Calculate(subtotal);
+              
         }
         
         public void Calculate(double subtotal)
@@ -56,6 +65,9 @@ namespace Myreceipt
             {
                 DiscountRate = .15;
             }
+            MoneyOff = Subtotal * DiscountRate;
+            Total = Subtotal - MoneyOff;
         }
+
     }
 }

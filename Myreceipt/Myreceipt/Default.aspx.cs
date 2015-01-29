@@ -16,10 +16,19 @@ namespace Myreceipt
 
         protected void Calculate_Click(object sender, EventArgs e)
         {
-            if (IsValid)
-            {
-                   var yourReceipt = new receipt(Double.Parse(TextBox1.Text));
-            }
+            if (IsValid) { 
+        
+            
+                   var yourReceipt = new receipt(Double.Parse(Input.Text));
+       
+                   ReceiptPanel.Visible = true;
+                   
+                   Subtotal.Text = string.Format("{0:c}", receipt.Subtotal);
+                   DiscountRate.Text = string.Format("{0:p0}", receipt.DiscountRate);
+                   MoneyOff.Text = string.Format("{0:c}", receipt.MoneyOff);
+                   Total.Text = string.Format("{0:c}", receipt.Total);
+            
+        }
         }
     }
 }

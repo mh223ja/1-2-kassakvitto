@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Web.UI;
 
 namespace Myreceipt
 {
@@ -12,7 +13,7 @@ namespace Myreceipt
 
         protected void Application_Start(object sender, EventArgs e)
         {
-           /* var jQuery = new ScriptResourceDefinition
+            var jQuery = new ScriptResourceDefinition
             {
                 Path = "~/Scripts/jquery-2.2.3.min.js",
                 DebugPath = "~/Scripts/jquery-2.1.3.js",
@@ -20,7 +21,8 @@ namespace Myreceipt
                 CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-2.2.3.js"
 
             };
-            ScriptManager.ScriptResourceMapping.AddDefinition("jquery", jQuery); */
+            ScriptManager.ScriptResourceMapping.AddDefinition("jquery", jQuery);
+        }
 
         protected void Session_Start(object sender, EventArgs e)
         {
