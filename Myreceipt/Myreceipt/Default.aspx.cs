@@ -31,6 +31,7 @@ namespace Myreceipt
                    Total.Text = string.Format("{0:c}", yourReceipt.Total);
             
         }
+
         }
         protected void Reset_Click(object sender, EventArgs e)
         {

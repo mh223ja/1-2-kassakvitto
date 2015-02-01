@@ -15,10 +15,8 @@
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         <asp:TextBox ID="Input" runat="server" TextMode="SingleLine"></asp:TextBox>
          <asp:Label ID="Label3" runat="server" Text="Dollars"></asp:Label>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="You must enter a number!" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="You need to enter a whole number" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" Type="Double" Operator="DataTypeCheck"></asp:CompareValidator>
-        <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="The amount must be greater than zero" ControlToValidate="Input" Display ="Dynamic" MinimumValue ="1" MaximumValue ="99999999999999999999999999999999999999"
-            Type ="Double" Font-Bold="True" Font-Size="18"></asp:RangeValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="You must enter a number!" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" Text="*"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="You need to enter a whole number" ControlToValidate="Input" Display="Dynamic" ForeColor="Red" Type="Double" Operator="GreaterThan" ValueToCompare="0" Text="*"></asp:CompareValidator>
         <asp:Button ID="Calculate" runat="server" Text="Rebate" OnClick="Calculate_Click" />
         <asp:Button ID="Reset" runat="server" Text="Reset" Visible ="false" OnClick="Reset_Click" />
     </div>

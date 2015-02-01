@@ -10,11 +10,10 @@ namespace Myreceipt
         private double _subTotal;
 
         public double Subtotal
-        {
-            get;
-            set;
+        
 
-            /*get
+        {
+            get
             {
                 return _subTotal;
             }
@@ -26,7 +25,7 @@ namespace Myreceipt
                     throw new ArgumentOutOfRangeException("Error! You must enter a number greater than 0");
                 }
                 _subTotal = value;
-            }*/
+            }
         }
 
         public double DiscountRate { get; private set;}
